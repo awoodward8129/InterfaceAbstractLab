@@ -14,9 +14,9 @@ public interface Course {
     
 
     
-     public void setCourseNumber(String courseNum);
-     public void setCredits(double credits);
-     public void setCourseName(String courseName);
-     public void returnValues();
+     public final void setCourseNumber(String courseNum);
+     public final void setCredits(double credits);
+     public final void setCourseName(String courseName);
+     public final void returnValues();
      
 }
