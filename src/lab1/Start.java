@@ -15,11 +15,12 @@ public class Start
 { 
 public static void main(String [] args)
 	{
-            Course introJava = new IntroJavaCourse("courseName", "courseNumber", 3.5, "prerequisites");
-            
+            Course IntroJava = new IntroJavaCourse("courseName", "courseNumber", 3.5, "prerequisites");
+            Course IntroProgramming= new IntroToProgrammingCourse("courseName", "courseNumber", 3.5, "prerequisites");
          
             
      introJava.returnValues();
+     IntroProgramming.returnValues();
             
     }
 
