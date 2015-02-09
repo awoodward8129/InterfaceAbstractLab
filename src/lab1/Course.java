@@ -28,7 +28,7 @@ public abstract class Course {
         
     }
     
-   public void returnValues(){
+   public final void returnValues(){
    
        setCourseName(this.courseName);
        setCourseNumber(this.courseNumber);
@@ -60,7 +60,7 @@ public abstract class Course {
         this.courseNumber = courseNumber;
     }
     
-       private  void setCredits(double credits) {
+       private final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -83,7 +83,7 @@ public abstract class Course {
         this.prerequisites = prerequisites;
     }
  
- public void getCapitalizedCourseName() {
+ public final void getCapitalizedCourseName() {
        System.out.println( this.courseName.toUpperCase());
     }
 }
